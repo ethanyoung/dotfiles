@@ -1,5 +1,6 @@
 cc=~/Projects/grasshopper/grasshopper_dev/community_cloud
 us=~/Projects/grasshopper/grasshopper_dev/gh_user_service
+ms=~/Projects/grasshopper/grasshopper_dev/gh_message_service
 fgem=~/Projects/grasshopper/foundation-grasshopper
 
 tmux_four() {
