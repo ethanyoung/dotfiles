@@ -211,3 +211,6 @@ au BufNewFile,BufRead *.xlsx.axlsx set filetype=ruby
 "autocmd BufWritePre * :%s/\s\+$//e
 :highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 :match ExtraWhitespace /\s\+$/
+
+" ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
