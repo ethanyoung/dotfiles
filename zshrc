@@ -8,8 +8,8 @@ tmux_four() {
   tmux rename-window 'Foo'
   tmux select-window -t foo:0
   tmux split-window -v -t 0
-  tmux split-window -h -t 1 
-  tmux split-window -h -t 0 
+  tmux split-window -h -t 1
+  tmux split-window -h -t 0
   tmux -2 attach-session -t foo
 }
 
@@ -30,9 +30,6 @@ ZSH_THEME="robbyrussell"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
-fi
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -107,3 +104,6 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
