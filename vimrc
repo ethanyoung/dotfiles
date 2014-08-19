@@ -204,7 +204,10 @@ endfunction
 "set directory=.,$TEMP
 "set clipboard=unnamed
 
-filetype on
+" highlighting for .xlsx and .axlsx
 au BufNewFile,BufRead *.xlsx.axlsx set filetype=ruby
-autocmd BufWritePre * :%s/\s\+$//e
 
+" trailing whitespaces
+"autocmd BufWritePre * :%s/\s\+$//e
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+:match ExtraWhitespace /\s\+$/
