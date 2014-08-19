@@ -9,6 +9,8 @@ syntax on
 
 " colour scheme
 "colorscheme koehler
+
+" Especially for Ubuntu
 set background=dark
 
 " allows switching from unsaved buffers without saving first
