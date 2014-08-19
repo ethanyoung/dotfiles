@@ -125,7 +125,7 @@ set foldlevelstart=99
 " map Y to act like D and C, i.e. to yank until EOL, rather than act as yy
 map Y y$
 
-" map <C-L> (redraw screen) to also turn off search highlighting until the 
+" map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
@@ -206,3 +206,5 @@ endfunction
 
 filetype on
 au BufNewFile,BufRead *.xlsx.axlsx set filetype=ruby
+autocmd BufWritePre * :%s/\s\+$//e
+
