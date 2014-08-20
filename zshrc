@@ -73,8 +73,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-export PATH="/usr/local/heroku/bin:/home/ethan/.rvm/gems/ruby-2.0.0-p353/bin:/home/ethan/.rvm/gems/ruby-2.0.0-p353@global/bin:/home/ethan/.rvm/rubies/ruby-2.0.0-p353/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/ethan/.rvm/bin:/home/ethan/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
