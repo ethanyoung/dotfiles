@@ -3,8 +3,8 @@ UNIX dot files
 
 How to use
 ---
-Clone the repository to you Home folder.
+Clone the repository to Home folder.
 
-Link your dot files to the files in the repository:
+Link the files in the repository to corresponding dot files:
 
 `ln -s ~/dotfiles/$filename ~/.$filename`
