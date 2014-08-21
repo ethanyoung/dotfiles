@@ -207,6 +207,8 @@ endfunction
 " highlighting for .xlsx and .axlsx
 au BufNewFile,BufRead *.xlsx.axlsx set filetype=ruby
 
+au BufNewFile,BufRead *.coffee set filetype=javascript
+
 " trailing whitespaces
 "autocmd BufWritePre * :%s/\s\+$//e
 :highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
