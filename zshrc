@@ -93,6 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# History
 HISTFILE=~/.history
 SAVEHIST=10000
 HISTSIZE=10000
@@ -104,6 +105,7 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 
+# Custom alias
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
