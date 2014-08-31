@@ -23,7 +23,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # RVM
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
