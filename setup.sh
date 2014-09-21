@@ -1,3 +1,5 @@
+# This script has not been finished. Please do not use it.
+
 #!/bin/bash
 filename_list=(vim vimrc zshrc bash_aliases rvmrc)
 for filename in "${filename_list[@]}"; do
