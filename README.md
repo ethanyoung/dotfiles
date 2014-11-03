@@ -11,4 +11,4 @@ Link the files in the repository to corresponding dot files:
 
 For a quick setup
 ---
-Using `setup.sh` to do a quick setup.
+Using `setup.sh` for a quick setup.
