@@ -12,3 +12,5 @@ Link the files in the repository to corresponding dot files:
 For a quick setup
 ---
 Using `setup.sh` for a quick setup.
+*Note: only vim and zsh related files are included in the setup.sh. Other
+files, such as rvmrc, need to be manually linked.*

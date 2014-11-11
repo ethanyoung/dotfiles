@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Names of the files to link
-filename_list=(vim vimrc zshrc bash_aliases rvmrc)
+filename_list=(vim vimrc zshrc bash_aliases)
 
 for filename in "${filename_list[@]}"; do
   origin="$HOME/dotfiles/$filename"
