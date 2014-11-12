@@ -19,7 +19,7 @@ reset_db() {
 }
 
 # RVM
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export "PATH=$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Path to your oh-my-zsh installation.
@@ -76,6 +76,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
