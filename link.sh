@@ -1,20 +1,5 @@
 #!/bin/bash
 
-# Install necessary software
-
-# vim
-
-# zsh
-
-# oh-my-zsh
-
-# chsh
-
-# tmux
-
-# xclip
-
-
 # Names of the files to link
 filename_list=(vim vimrc zshrc bash_aliases)
 
