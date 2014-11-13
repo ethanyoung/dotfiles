@@ -1,7 +1,9 @@
-cc=~/Projects/grasshopper/grasshopper_dev/community_cloud
-us=~/Projects/grasshopper/grasshopper_dev/gh_user_service
-ms=~/Projects/grasshopper/grasshopper_dev/gh_message_service
-fgem=~/Projects/grasshopper/foundation-grasshopper
+dotfiles=~/dotfiles
+
+cc=~/grasshopper_dev/community_cloud
+us=~/grasshopper_dev/gh_user_service
+ms=~/grasshopper_dev/gh_message_service
+fgem=~/foundation-grasshopper
 
 tmux_four() {
   tmux new-session -d -s foo
@@ -17,10 +19,6 @@ reset_db() {
   bundle exec rake db:drop db:create db:migrate db:seed
   RAILS_ENV=test bundle exec rake db:drop db:create db:migrate db:seed
 }
-
-# RVM
-export "PATH=$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -76,7 +74,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -111,3 +109,7 @@ setopt HIST_REDUCE_BLANKS
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
+
+# rvm path. Important! This needs to be put at the bottom
+export "PATH=$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
