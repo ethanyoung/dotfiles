@@ -7,7 +7,7 @@ Clone the repository to Home folder.
 
 Link the files in the repository to corresponding dot files:
 
-```
+```shell
 $ ln -s ~/dotfiles/$filename ~/.$filename
 ```
 
