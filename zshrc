@@ -20,6 +20,10 @@ reset_db() {
   RAILS_ENV=test bundle exec rake db:drop db:create db:migrate db:seed
 }
 
+upload_fgem() {
+  curl -F package=@$1 https://esg64crBt2oZmVR2Rspi@push.fury.io/evision/
+}
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
