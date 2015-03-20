@@ -16,8 +16,10 @@ tmux_four() {
 }
 
 reset_db() {
-  bundle exec rake db:drop db:create db:migrate db:seed
-  RAILS_ENV=test bundle exec rake db:drop db:create db:migrate db:seed
+  bundle exec rake db:drop db:create db:migrate
+  bundle exec rake db:seed
+  RAILS_ENV=test bundle exec rake db:drop db:create db:migrate
+  RAILS_ENV=test bundle exec rake db:seed
 }
 
 upload_fgem() {
