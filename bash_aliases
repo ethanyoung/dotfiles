@@ -13,3 +13,5 @@ alias hist='history 1'
 alias rc='bundle exec rails console'
 alias rs='bundle exec rails s -p5500'
 alias test='bundle exec rspec'
+
+alias compile='g++ -c'
