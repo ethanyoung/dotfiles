@@ -1,9 +1,8 @@
 dotfiles=~/dotfiles
 
-cc=~/grasshopper_dev/community_cloud
-us=~/grasshopper_dev/gh_user_service
-ms=~/grasshopper_dev/gh_message_service
-fgem=~/foundation-grasshopper
+if [ -f ~/.zsh_vars ]; then
+. ~/.zsh_vars
+fi
 
 tmux_four() {
   tmux new-session -d -s foo
