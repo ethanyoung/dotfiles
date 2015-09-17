@@ -219,3 +219,6 @@ au BufNewFile,BufRead *.xlsx.axlsx set filetype=ruby
 
 " ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" set ruby as the command for make
+set makeprg=ruby\ %
