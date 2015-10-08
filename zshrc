@@ -1,5 +1,6 @@
 dotfiles=~/dotfiles
 
+# Load some local variables
 if [ -f ~/.zsh_vars ]; then
 . ~/.zsh_vars
 fi
