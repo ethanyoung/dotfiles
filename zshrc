@@ -22,7 +22,7 @@ reset_db() {
   RAILS_ENV=test bundle exec rake db:seed
 }
 
-upload_fgem() {
+upload_gemfury() {
   curl -F package=@$1 https://esg64crBt2oZmVR2Rspi@push.fury.io/evision/
 }
 
@@ -34,9 +34,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
-#ZSH_THEME="rkj-repos"
-#ZSH_THEME="random"
-#ZSH_THEME="amuse"
+#ZSH_THEME="blinks"
 #ZSH_THEME="my-theme"
 
 # Example aliases
