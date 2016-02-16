@@ -1,7 +1,7 @@
 " Pathogen
-call pathogen#infect()
-syntax enable
-filetype plugin indent on
+"call pathogen#infect()
+"syntax enable
+"filetype plugin indent on
 
 "--------------------------------------------------------------------------
 " Features
