@@ -29,6 +29,9 @@ Plugin 'user/L9', {'name': 'newL9'}
 " JSON syntax
 Plugin 'elzr/vim-json'
 
+" Dockerfile syntax
+Plugin 'ekalinin/Dockerfile.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -261,4 +264,5 @@ au BufNewFile,BufRead *.xlsx.axlsx set filetype=ruby
 " set ruby as the command for make
 set makeprg=ruby\ %
 
-au! BufRead,BufNewFile *.json set filetype=json 
+au! BufRead,BufNewFile *.json set filetype=json
+au BufNewFile,BufRead *.template set filetype=json
