@@ -5,6 +5,11 @@ if [ -f ~/.zsh_vars ]; then
 . ~/.zsh_vars
 fi
 
+function chpwd() {
+  emulate -L zsh
+  ls -G
+}
+
 tmux_four() {
   tmux new-session -d -s foo
   tmux rename-window 'Foo'
