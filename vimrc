@@ -162,7 +162,7 @@ set nowrap
 set listchars+=extends:+
 
 " maximum allowable line length
-set textwidth=79
+set textwidth=100
 
 " code folding
 set foldmethod=syntax
