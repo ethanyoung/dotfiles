@@ -1,0 +1,14 @@
+[push]
+	default = simple
+[user]
+	email = ethan.yang@nintex.com
+	name = Ethan Yang
+[core]
+	autocrlf = input
+	editor = vim
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f
+[credential]
+	helper = osxkeychain
