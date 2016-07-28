@@ -5,9 +5,11 @@ How to use
 ---
 Clone the repository to Home folder.
 
-Set up [Vundle]:
+Set up [Vundle](https://github.com/VundleVim/Vundle.vim):
 
-   `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+```shell
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
 Link the files in the repository to corresponding dot files:
 
