@@ -113,7 +113,7 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 
-# Custom alias
+# Custom aliases
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
