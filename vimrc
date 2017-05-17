@@ -203,7 +203,7 @@ function ToggleWrap()
         echo "Wrap OFF"
         setlocal nowrap
         set virtualedit=all
-        set textwidth=79
+        set textwidth=100
         silent! nunmap <buffer> <Up>
         silent! nunmap <buffer> <Down>
         silent! nunmap <buffer> <Home>
