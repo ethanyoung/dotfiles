@@ -106,6 +106,7 @@ HISTFILE=~/.history
 SAVEHIST=10000
 HISTSIZE=10000
 
+# Include history from all sessions/tabs.
 setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
