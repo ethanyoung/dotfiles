@@ -1,5 +1,7 @@
 dotfiles=~/dotfiles
 
+ZSH_DISABLE_COMPFIX=true
+
 # Load some local variables
 if [ -f ~/.zsh_vars ]; then
 . ~/.zsh_vars
@@ -119,4 +121,4 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-export PYTHONPATH="/usr/lib/python2.7/site-packages:/usr/local/lib/python2.7/site-packages:/usr/local/lib/python2.7/dist-packages"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
