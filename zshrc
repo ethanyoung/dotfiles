@@ -22,13 +22,6 @@ tmux_four() {
   tmux -2 attach-session -t foo
 }
 
-reset_db() {
-  bundle exec rake db:drop db:create db:migrate
-  bundle exec rake db:seed
-  RAILS_ENV=test bundle exec rake db:drop db:create db:migrate
-  RAILS_ENV=test bundle exec rake db:seed
-}
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -122,3 +115,4 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export PATH="/usr/local/opt/terraform@0.12/bin:$PATH"

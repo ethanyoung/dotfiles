@@ -91,7 +91,7 @@ iab perr fprintf(stderr, "%s:%d:\n", __FILE__, __LINE__);<ESC>23ha
 set backspace=indent,eol,start
 
 " number of lines remembered in the command line history
-set history=50
+set history=100
 
 " show matching bracket briefly after one is inserted
 set showmatch
