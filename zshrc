@@ -9,7 +9,7 @@ fi
 
 function chpwd() {
   emulate -L zsh
-  ls -G
+  ls -lh
 }
 
 tmux_four() {
@@ -31,6 +31,7 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="ys"
+#ZSH_THEME="dracula"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -114,5 +115,5 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-export PATH="/usr/local/opt/terraform@0.12/bin:$PATH"
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
