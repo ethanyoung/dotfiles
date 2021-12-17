@@ -2,11 +2,6 @@ dotfiles=~/dotfiles
 
 ZSH_DISABLE_COMPFIX=true
 
-# Load some local variables
-if [ -f ~/.zsh_vars ]; then
-. ~/.zsh_vars
-fi
-
 function chpwd() {
   emulate -L zsh
   ls -lh
@@ -115,5 +110,7 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# Load some local variables
+if [ -f ~/.zsh_vars ]; then
+. ~/.zsh_vars
+fi
